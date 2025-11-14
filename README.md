@@ -106,7 +106,3 @@ To keep the repository organized, the following layout is recommended:
 └── scripts/
     ├── track_cells.py           # Tracking and Labeling segmented cells script
     └── fret_analysis.py         # FRET Analysis
-
-
-
-
