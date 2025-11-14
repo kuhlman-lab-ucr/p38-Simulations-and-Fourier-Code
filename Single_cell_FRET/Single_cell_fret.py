@@ -6,7 +6,7 @@ Compute per-track FRET time traces (A/D) from:
 - Cellpose mask TIFFs
 - Donor channel TIFF stack
 - Acceptor channel TIFF stack
-- Track CSV from the sticky tracker (track_render_overlay.py)
+- Track CSV from the sticky tracker (track_render_label_overlay.py)
 
 Outputs:
 - CSV with per-frame, per-track FRET ratios and intensities
