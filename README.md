@@ -1,13 +1,19 @@
 # Single Cell Tracking Pipeline
 
-This repository contains scripts and notes for running Cellpose-based segmentation and, later on, cell tracking and analysis for single-cell HEK293T (transfected with VPC construct) imaging experiments.
+This repository contains scripts and notes for running Cellpose-based segmentation, single-cell tracking and FRET analysis for HEK293T imaging experiments.
 ---
 
 # 1. Overview
 
-The current focus of this repository is the first stage of the pipeline: segmentation with Cellpose. For each field of view (FOV), Cellpose is run on the corresponding image folder and produces mask files (for example TIFF masks) that can then be used for tracking and downstream analysis.
+This repository contains the full single-cell analysis pipeline used for VPC trasfected HEK293T cells experiments.  
+It includes all three major components of the workflow:
 
-Later, the repository can be extended with tracking scripts (stable cell IDs over time) and analysis scripts (FRET traces, spectral analysis, etc.).
+1. **Segmentation** — Cellpose-based segmentation with tuned parameters  
+2. **Tracking & Labeling** — stable cell ID assignment across frames, handling merges/splits, generating labeled videos and CSV track files  
+3. **FRET Analysis** — extraction of single-cell FRET traces  
+
+All scripts used for segmentation, tracking, and FRET analysis are included in this repository.
+
 
 ---
 
@@ -103,6 +109,13 @@ To keep the repository organized, the following layout is recommended:
 .
 ├── README.md
 ├── .gitignore
-└── scripts/
-    ├── track_cells.py           # Tracking and Labeling segmented cells script
-    └── fret_analysis.py         # FRET Analysis
+│
+├── tracking/
+│   ├── track_render_label_overlay.py #Contains all tracking and labeling scripts (Hungarian matching, velocity prediction, anti-merge logic, GIF/MP4 generation, etc.)
+│
+└── analysis/
+    ├── single_cell_fret_analysis.py #Contains all scripts for single-cell FRET extraction
+
+```
+
+**Raw imaging data (TIFF/ND2 files) will NOT be uploaded.**
