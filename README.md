@@ -49,7 +49,7 @@ pip install cellpose
 
 GPU use requires a CUDA-enabled PyTorch.
 
-#Step 1: Install PyTorch with CUDA support. Follow the instructions on the PyTorch website and choose the command that matches your system:
+**Step 1:** Install PyTorch with CUDA support. Follow the instructions on the PyTorch website and choose the command that matches your system:
 
 https://pytorch.org/get-started/locally/
 
@@ -57,12 +57,16 @@ Example (only as a template; your command may differ):
 
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 
-#Step 2: Install Cellpose with GPU extras:
+**Step 2:** Install Cellpose with GPU extras:
 
 pip install "cellpose[gpu]"
 
-#Step 3: Test that Cellpose can see the GPU:
+**Step 3:** Test that Cellpose can see the GPU:
 
 python -m cellpose --gpu_test
 
 If the output shows “GPU activated”, the GPU installation is working. If it reports a fallback to CPU, check the PyTorch and CUDA versions.
+
+---
+
+
