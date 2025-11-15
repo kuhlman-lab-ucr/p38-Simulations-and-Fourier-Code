@@ -25,7 +25,7 @@ You need:
 - A working Python environment (conda or venv).  
 - For GPU acceleration: an NVIDIA GPU with CUDA drivers and a CUDA-enabled PyTorch installation.
 
-Large image files (TIFF, ND2) are not required to be in the repository. Scripts, commands, and installation instructions will be provided in GitHub.
+Scripts, commands, and installation instructions will be provided in GitHub.
 
 ---
 
