@@ -117,5 +117,3 @@ To keep the repository organized, the following layout is recommended:
     ├── Single_cell_fret.py #Contains all scripts for single-cell FRET extraction
 
 ```
-
-**Raw imaging data (TIFF/ND2 files) will NOT be uploaded.**
