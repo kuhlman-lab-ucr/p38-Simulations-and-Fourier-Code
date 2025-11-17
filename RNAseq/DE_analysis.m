@@ -1,11 +1,11 @@
 %% Load data
-% PC Filename
-file = 'C:\Users\Tom\Documents\iCloudDrive\Documents\My Papers\p38\Data\RNAseq\gene_count2.xlsx';
-cd 'C:\Users\Tom\Documents\iCloudDrive\Documents\My Papers\p38\Data\RNAseq';
+% PC Filename - change to your path
+%file = \gene_count2.xlsx';
+%cd '\RNAseq';
 
-% Mac Filename
-%file = '/Users/thomaskuhlman/Documents/My Papers/p38/Data/RNAseq/gene_count2.xlsx';
-%cd 'Users/thomaskuhlman/Documents/My Papers/p38/Data/RNAseq';
+% Mac Filename - change to your path
+%file = '/gene_count2.xlsx';
+%cd '/RNAseq';
 
 
 % Load data
